@@ -22,7 +22,7 @@ video.innerHTML = `
 async function listaVideos(){
     const listaApi = await conectaApi.listaVideos();
     listaApi.forEach(element => lista.appendChild(
-        constroiCard(element.titulo, element.imagem, element.url, element.descricao));
+        constroiCard(element.titulo, element.imagem, element.url, element.descricao)));
         
 }
 
