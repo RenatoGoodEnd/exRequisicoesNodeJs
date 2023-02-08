@@ -1,6 +1,6 @@
 import { conectaApi } from "./conectaApi.js"
 
-const lista = document.querySelector([data-lista]);
+const lista = document.querySelector("[data-lista]");
 
 function constroiCard(titulo, imagem, url, descricao){
     const video = document.createElement("li");
@@ -14,9 +14,10 @@ video.innerHTML = `
     <div class="descricao-video">
     <img src="${imagem}">
     <h3>${titulo}</h3>
-    <p>236 mil visualizações</p>
+    <p>${descricao} mil visualizações</p>
     </div>
 `
+    return video;
 }
 
 async function listaVideos(){
